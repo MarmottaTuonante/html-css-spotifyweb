@@ -35,7 +35,7 @@ a {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    height: 3000px;
+    height: 1600px;
 }
 
 .small-container a {
@@ -92,6 +92,11 @@ a {
     display: flex;
     justify-content: space-between;
 }
+
+.arrow-buttons {
+    padding-top: 10px;
+}
+
 .arrow-buttons, .avatar-button {
     display: flex;
     align-self: center;
@@ -105,6 +110,11 @@ a {
     width: 30px;
     height: 30px;
     border-radius: 30px;
+    margin-right: 15px;
+}
+
+.avatar-button span {
+    margin: 0 10px;
 }
 
 /* Card Piccole */
@@ -268,3 +278,13 @@ nav {
     align-items: center;
     width: 20%;
 }
+
+/* Media Queries */
+@media screen and (width: 768px)
+    {
+        .small-cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
