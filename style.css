@@ -1,69 +1,270 @@
-/* reset */
+:root {
+    --green: #1ed660;
+    --black: #020202;
+    --black2: #222222;
+    --gray: #d8d8d8;
+}
+
 * {
     box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 auto;
-}
- /* common */
- body {
-    font-family: 'Montserrat', sans-serif;
- }
-
- a {
-     text-decoration: none;
- }
-
- .wt {
-     color: white;
-     font-weight: bold;
- }
-
- /* header */
-.floating-logo-burger {
-    padding: 10px;
-    width: 100vw;
-    height: 80px;
-    background-color: #080b12;
-}
-
-.floating-logo-burger img {
-    position: relative;
-    top: 10%;
-    width: 10%;
-    height: 80%;
-}
-
-.rbtn {
-    border: solid 1px white;
-    border-radius: 21px;
-    padding: 12px;
-    position: absolute;
-    right: 17px;
-    top: 2%;
-}
-
-/* main */
-.container {
-    width: 90.07vw;
-    height: 86.7vh;
-    background-color: #141922;
-    position: absolute;
-    top: 80px;
-    left: 138px;
-}
-
-
-/* aside */
-.left-nav {
-    height: calc(100vh - 100px);
-    width: 10vw;
-    background-color: #000000;
     margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: var(--gray);
 }
 
-/* footer */
-.footer-container {
-    width: 99.2vw;
-    height: 100px;
-    background-color: #282828;
+.big-container, .small-container {
+    border: 1px solid black;
+}
+
+body {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-areas: "pic big" "lettore lettore";
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ======================== Parte di sinistra ======================== */
+.small-container {
+    grid-area: pic;
+    background: var(--black);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 3000px;
+}
+
+.small-container a {
+    display: inline-block;
+    color: var(--gray);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    width: 10vw;
+}
+
+.top-container .home-buttons, .top-container .music-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-container {
+    justify-content: space-between;
+}
+.top-container i {
+    padding: 5px;
+    margin: 0 5px 0 0;
+}
+
+.home-buttons {
+    margin-bottom: 30px;
+}
+
+.bot-container .links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.links a {
+    padding: 5px 0;
+}
+/* ======================== Parte di destra ======================== */
+.big-container {
+    grid-area: big;
+    display: flex;
+    flex-direction: column;
+    background: var(--black2);
+    padding: 0 20px;
+}
+.big-container h2, .top-buttons h4 {
+    padding: 30px 0;
+}
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.arrow-buttons, .avatar-button {
+    display: flex;
+    align-self: center;
+}
+.top-buttons .arrow-buttons a {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+/* Card Piccole */
+
+.small-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 20px;
+}
+
+.small-cards .s-card {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #363636;
+}
+
+.small-cards .s-card img {
+    width: 75px;
+    height: 75px;
+}
+
+
+.small-cards .s-card p {
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Card Medie */
+
+.mid-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0 10px;
+    margin: 5px 0;
+}
+
+.m-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    padding: 15px;
+    background: var(--black);
+}
+
+.m-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.m-card h4 {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.m-card p {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin: 5px 0;
+}
+
+.card-body {
+    margin: 5px 0;
+}
+
+/* ======================== Lettore del play ======================== */
+nav {
+    grid-area: lettore;
+    bottom: 0;
+    padding: 5px 5px;
+    width: 100%;
+    position: fixed;
+    background: var(--black2);
+}
+
+.console {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Album e nome */
+.left-console {
+    display: flex;
+    align-items: center;
+}
+
+.left-console img {
+    width: 10vh;
+    padding: 5px;
+}
+
+.song-name {
+    min-width: 10vw;
+    padding: 5px;
+}
+
+.song-name h6 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.song-name p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+/* Play e barra avanzamento */
+
+.center-console {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.music-controls {
+    display: flex;
+    justify-content: center;
+}
+.music-controls i {
+    width: 5vw;
+    margin: 5px 0;
+}
+.music-bar {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+}
+
+.progress-bar {
+    height: 5px;
+    width: 60%;
+    background: white;
+    border-radius: 5px;
+}
+
+.shadow-bar {
+    height: 5px;
+    width: 90%;
+    background: gray;
+    border-radius: 5px;
+}
+/* Controlli volume */
+
+.right-console {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.right-console i {
+    width: 2vw;
+}
+.volume-bar {
+    display: flex;
+    align-items: center;
+    width: 20%;
 }

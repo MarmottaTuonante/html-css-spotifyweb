@@ -1,59 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/5634ae6636.js" crossorigin="anonymous"></script>
+
+    <!-- Link Style -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="link rel=" preconnect href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="spotify/img/favicon.ico">
     <title>My Spotify</title>
 </head>
 
 <body>
-    <header>
-        <!-- floating content -->
-        <section>
-            <div class="floating-logo-burger">
-                <picture>
-                    <img src="spotify/img/logo.svg" alt="logo">
-                </picture>
-                <span class="rbtn">
-                    <a href="#" class="wt">Effettua l'upgrade</a>
-                </span>
-            </div>
-        </section>
-    </header>
-    
-    <!-- left aside -->
-    <aside>
-        <!-- left-nav -->
-        <section class="left-side">
-            <div class="left-nav">
-
-            </div>
-        </section>
-
-    </aside>
-
-    <!-- main -->
-    <main>
-        <div class="container">
-            
+    <!-- Parte centrale piccola -->
+    <div class="small-container">
+        <div class="logo">
+            <a href="#"><img src="/Spotify/assets/img/logo.png" alt=""></a>
         </div>
+        <div class="top-container">
+            <div class="home-buttons">
+                <a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i><span>Cerca</span></a>
+                <a href="#"><i class="fa-solid fa-music"></i><span>La tua libreria</span></a>
+            </div>
 
-    </main>
-
-    <!-- footer -->
-    <footer>
-        <div class="footer-container">
-
+            <div class="music-buttons">
+                <a href="#"><i class="fa-solid fa-square-plus"></i><span>Crea playlist</span></a>
+                <a href="#"><i class="fa-solid fa-heart"></i><span>Brani che ti piacciono</span></a>
+                <a href="#"><i class="fa-solid fa-bookmark"></i><span>I tuoi episodi</span></a>
+            </div>
         </div>
+        <hr>
+        <div class="bot-container">
+            <div class="links">
+                <a href="#">Afro Beat</a>
+                <a href="#">Persone</a>
+                <a href="#">Ghost</a>
+                <a href="#">Jason Derulo</a>
+            </div>
+        </div>
+    </div>
 
-    </footer>
-    
+    <!-- Parte centrale grande -->
+    <div class="big-container">
+        <div class="top-buttons">
+            <div class="arrow-buttons">
+                <a href="#"><i class="fa-solid fa-angle-left"></i></i></a>
+                <a href=""><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="avatar-button">
+                <a href=""><i class="fa-solid fa-user"></i><span>My Space</span><i
+                        class="fa-solid fa-arrow-down"></i></a>
+            </div>
+        </div>
+        <h2>Buonasera</h2>
+        <div class="small-cards">
+            <div class="s-card">
+                <img src="/Spotify/assets/img/1.png" alt="">
+                <p>Estate 2022</p>
+            </div>
+            <div class="s-card">
+                <img src="/Spotify/assets/img/2.png" alt="">
+                <p>In tendenza</p>
+            </div>
+            <div class="s-card">
+                <img src="/Spotify/assets/img/3.png" alt="">
+                <p>Le tue hits estive del passato</p>
+            </div>
+            <div class="s-card">
+                <img src="/Spotify/assets/img/4.png" alt="">
+                <p>I tuoi brani preferiti del 2017</p>
+            </div>
+            <div class="s-card">
+                <img src="/Spotify/assets/img/5.png" alt="">
+                <p>Nuove Uscite</p>
+            </div>
+            <div class="s-card">
+                <img src="/Spotify/assets/img/6.png" alt="">
+                <p>Top 50 America</p>
+            </div>
+        </div>
+        <!-- Card Medie -->
+        <div class="top-buttons created">
+            <a href="#"><h2>Create per te</h2></i></a>
+            <a href="#"><h4>Visualizza tutto</h4></i></a>
+        </div>
+        <div class="mid-cards">
+            <div class="m-card">
+                <img src="/Spotify/assets/img/1.png" alt="">
+                <div class="card-body">
+                    <h4>Estate 2022</h4>
+                    <p>Sfera Ebbasta, Mambo Losco, Pordinero</p>
+                </div>
+            </div>
+            <div class="m-card">
+                <img src="/Spotify/assets/img/2.png" alt="">
+                <div class="card-body">
+                    <h4>In tendenza</h4>
+                    <p>Sfera Ebbasta, Mambo Losco, Pordinero</p>
+                </div>
+            </div>
+            <div class="m-card">
+                <img src="/Spotify/assets/img/3.png" alt="">
+                <div class="card-body">
+                    <h4>Le tue hits estive del passato</h4>
+                    <p>Sfera Ebbasta, Mambo Losco, Pordinero</p>
+                </div>
+            </div>
+            <div class="m-card">
+                <img src="/Spotify/assets/img/4.png" alt="">
+                <div class="card-body">
+                    <h4>I tuoi brani preferiti del 2017</h4>
+                    <p>Sfera Ebbasta, Mambo Losco, Pordinero</p>
+                </div>
+            </div>
+            <div class="m-card">
+                <img src="/Spotify/assets/img/5.png" alt="">
+                <div class="card-body">
+                    <h4>Nuove Uscite</h4>
+                    <p>Sfera Ebbasta, Mambo Losco, Pordinero</p>
+                </div>
+            </div>
+        </div>
+        <div class="top-buttons">
+            <a href="#"><h2>Continua ad ascoltare</h2></i></a>
+            <a href="#"><h4>Visualizza tutto</h4></i></a>
+        </div>
+        <div class="mid-cards">
+            <div class="m-card">
+                <img src="/Spotify/assets/img/8.jpeg" alt="">
+                <div class="card-body">
+                    <h4>Hit Internazionali</h4>
+                    <p>Le canzoni internazionali del momento!</p>
+                </div>
+            </div>
+            <div class="m-card">
+                <img src="/Spotify/assets/img/9.png" alt="">
+                <div class="card-body">
+                    <h4>Today's Top Hits</h4>
+                    <p>Harry Styles is on top of the Hottest 50!</p>
+                </div>
+            </div>
+            <div class="m-card">
+                <img src="/Spotify/assets/img/10.jpeg" alt="">
+                <div class="card-body">
+                    <h4>Beast Mode</h4>
+                    <p>Get your beast mode on!</p>
+                </div>
+            </div>
+            <div class="m-card">
+                <img src="/Spotify/assets/img/11.jpeg" alt="">
+                <div class="card-body">
+                    <h4>Plus Ultra</h4>
+                    <p>La playlist urban più grande d'Italia</p>
+                </div>
+            </div>
+            <div class="m-card">
+                <img src="/Spotify/assets/img/10.avif" alt="">
+                <div class="card-body">
+                    <h4>Nuove Uscite</h4>
+                    <p>Sfera Ebbasta, Mambo Losco, Pordinero</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lettore Musicale -->
+    <nav>
+        <div class="console">
+            <div class="left-console">
+                <div class="song-image">
+                    <img src="/Spotify/assets/img/7.png" alt="">
+                </div>
+                <div class="song-name">
+                    <h6>Outono</h6>
+                    <p>Dinis</p>
+                </div>
+                <div class="song-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+            <div class="center-console">
+                <div class="music-controls">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-pause"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="music-bar">
+                    <span class="current">0:22</span>
+                    <div class="shadow-bar">
+                        <span>
+                            <div class="progress-bar">
+                                <span></span>
+                            </div>
+                        </span>
+                    </div>
+                    <span class="current">3:40</span>
+                </div>
+            </div>
+            <div class="right-console">
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-compact-disc"></i>
+                <i class="fa-solid fa-volume-off"></i>
+                <div class="volume-bar">
+                    <div class="shadow-bar">
+                        <span>
+                            <div class="progress-bar">
+                                <span></span>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-maximize"></i>
+            </div>
+        </div>
+    </nav>
 </body>
 
 </html>
